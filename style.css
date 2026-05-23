@@ -530,7 +530,7 @@ textarea::placeholder {
 @media (max-width: 768px) {
   nav { padding: 16px 24px; }
   .nav-links { gap: 20px; }
-  
+
   .hero {
     padding: 100px 24px 60px;
     min-height: auto;
@@ -542,6 +542,7 @@ textarea::placeholder {
     right: auto;
     transform: none;
     margin-top: 40px;
+    display: inline-block;
   }
 
   .hero-foto {
@@ -549,10 +550,22 @@ textarea::placeholder {
     height: 150px;
   }
 
+  .hero-foto-ring {
+    top: -8px;
+    right: -8px;
+    width: 120px;
+    height: 150px;
+  }
+
+  .section-label {
+    margin-bottom: 20px;
+  }
+
   .intro, .stats, .experiencia, .asesoria, .contacto { padding: 60px 24px; }
   .stats { flex-direction: column; gap: 40px; }
   .stat-divider { width: 60px; height: 1px; }
   .exp-grid { grid-template-columns: 1fr; }
   .asesoria-inner { grid-template-columns: 1fr; gap: 40px; }
+  .form-row { grid-template-columns: 1fr; }
   footer { padding: 24px; flex-direction: column; gap: 8px; }
 }
