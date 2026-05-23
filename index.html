@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roberto Formigli</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <nav>
+      <span class="nav-name">RF</span>
+      <div class="nav-links">
+        <a href="#experiencia">Experiencia</a>
+        <a href="#asesoria">Asesoría</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-eyebrow">Asunción, Paraguay · Disponible</div>
+      <h1>Roberto<br /><em>Formigli</em></h1>
+      <p class="hero-sub">Analista de Riesgo Crediticio<br />Finanzas para personas reales</p>
+      <div class="hero-foto-wrap">
+        <img src="assets/photo.jpeg" alt="Roberto Formigli" class="hero-foto" />
+        <div class="hero-foto-ring"></div>
+      </div>
+    </section>
+
+    <section class="intro reveal">
+      <p class="intro-text">
+        Más de <strong>10 años en banca</strong> me enseñaron que los números 
+        cuentan historias. En Itaú Paraguay analicé miles de clientes, construí 
+        pipelines en Python y tomé decisiones de riesgo que importaban.
+      </p>
+      <p class="intro-text">
+        Hoy también ayudo a <strong>personas</strong> a entender su situación 
+        financiera — sin jerga, sin productos que vender.
+      </p>
+    </section>
+
+    <section class="stats reveal">
+      <div class="stat">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">años en banca</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">5.000+</span>
+        <span class="stat-label">clientes analizados</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">1.200+</span>
+        <span class="stat-label">balances procesados</span>
+      </div>
+    </section>
+
+    <section id="experiencia" class="experiencia reveal">
+      <div class="section-label">Experiencia</div>
+      <div class="exp-grid">
+        <div class="exp-item">
+          <div class="exp-icon">⟳</div>
+          <h3>Risk Analytics</h3>
+          <p>Diseño de pipelines Python para procesar +1.200 balances corporativos y automatizar análisis financiero.</p>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon">◎</div>
+          <h3>Portfolio Monitoring</h3>
+          <p>Dashboard Power BI para cartera mayorista de +5.000 clientes con exposiciones en múltiples monedas.</p>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon">△</div>
+          <h3>Credit Policy</h3>
+          <p>Framework de pre-aprobación vehicular para base de +90.000 clientes y optimización de política hipotecaria.</p>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon">◇</div>
+          <h3>Rating Optimization</h3>
+          <p>Identificación de mejoras en ratings con impacto de seis cifras USD en provisiones crediticias.</p>
+        </div>
+      </div>
+
+      <div class="skills-wrap">
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">SAS</span>
+        <span class="skill">Excel avanzado</span>
+        <span class="skill">Riesgo crediticio</span>
+        <span class="skill">Portfolio analytics</span>
+      </div>
+    </section>
+
+    <section id="asesoria" class="asesoria reveal">
+      <div class="section-label">Asesoría personal</div>
+      <div class="asesoria-inner">
+        <h2 class="asesoria-title">Una conversación<br /><em>honesta</em> sobre tu dinero</h2>
+        <div class="asesoria-content">
+          <p>Ofrezco charlas cortas y gratuitas para ayudarte a entender dónde estás parado financieramente y por dónde empezar.</p>
+          <ul class="asesoria-lista">
+            <li><span class="lista-num">01</span>15–30 minutos por videollamada</li>
+            <li><span class="lista-num">02</span>Diagnóstico de tu situación actual</li>
+            <li><span class="lista-num">03</span>Sugerencias concretas y accionables</li>
+            <li><span class="lista-num">04</span>Completamente gratuito</li>
+          </ul>
+          <a href="#contacto" class="cta-btn">Agendar una charla</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto reveal">
+      <div class="section-label">Contacto</div>
+      <h2 class="contacto-title">Hablemos</h2>
+      <div class="contacto-links">
+        <a href="https://linkedin.com/in/robertoformigli" target="_blank" class="contacto-link">
+          <span>LinkedIn</span>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a href="mailto:roberformigli7@gmail.com" class="contacto-link">
+          <span>roberformigli7@gmail.com</span>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Roberto Formigli</span>
+      <span>Asunción, Paraguay</span>
+    </footer>
+
+    <script>
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.12 });
+      reveals.forEach(el => observer.observe(el));
+    </script>
+
+  </body>
+</html>
