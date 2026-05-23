@@ -537,25 +537,27 @@ textarea::placeholder {
   }
 
   .hero-foto-wrap {
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
-    margin-top: 40px;
-    display: inline-block;
-  }
+  position: relative;
+  top: auto;
+  right: auto;
+  transform: none;
+  margin-top: 40px;
+  width: 120px;
+}
 
-  .hero-foto {
-    width: 120px;
-    height: 150px;
-  }
+.hero-foto {
+  width: 120px;
+  height: 150px;
+  display: block;
+}
 
-  .hero-foto-ring {
-    top: -8px;
-    right: -8px;
-    width: 120px;
-    height: 150px;
-  }
+.hero-foto-ring {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 120px;
+  height: 150px;
+}
 
   .section-label {
     margin-bottom: 20px;
