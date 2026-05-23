@@ -114,20 +114,59 @@
   </div>
 </section>
 
-    <section id="contacto" class="contacto reveal">
-      <div class="section-label">Contacto</div>
-      <h2 class="contacto-title">Hablemos</h2>
-      <div class="contacto-links">
-        <a href="https://linkedin.com/in/robertoformigli" target="_blank" class="contacto-link">
-          <span>LinkedIn</span>
-          <span class="link-arrow">↗</span>
-        </a>
-        <a href="mailto:roberformigli7@gmail.com" class="contacto-link">
-          <span>Email</span>
-          <span class="link-arrow">↗</span>
-        </a>
+   <section id="contacto" class="contacto reveal">
+  <div class="section-label">Contacto</div>
+  <h2 class="contacto-title">Hablemos</h2>
+
+  <div class="contacto-links">
+    <a href="https://linkedin.com/in/robertoformigli" target="_blank" class="contacto-link">
+      <span>LinkedIn</span>
+      <span class="link-arrow">↗</span>
+    </a>
+    <a href="mailto:roberformigli7@gmail.com" class="contacto-link">
+      <span>Email</span>
+      <span class="link-arrow">↗</span>
+    </a>
+  </div>
+
+  <div class="form-wrap">
+    <form action="https://formspree.io/f/xjgzowzy" method="POST">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+        </div>
       </div>
-    </section>
+
+      <div class="form-group">
+        <label>¿Sobre qué te gustaría hablar?</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="motivo" value="Asesoría financiera" required />
+            <span>Asesoría financiera</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="motivo" value="Oportunidad profesional" />
+            <span>Oportunidad profesional</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje <span class="opcional">(opcional)</span></label>
+        <textarea id="mensaje" name="mensaje" placeholder="Contame brevemente tu situación o consulta..." rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar mensaje ↗</button>
+
+    </form>
+  </div>
+</section>
 
     <footer>
       <span>© 2026 Roberto Formigli</span>
