@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roberto Formigli</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   </head>
   <body>
@@ -13,6 +14,7 @@
       <span class="nav-name">RF</span>
       <div class="nav-links">
         <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#asesoria">Asesoría</a>
         <a href="#contacto">Contacto</a>
       </div>
@@ -93,23 +95,55 @@
       </div>
     </section>
 
-    <section id="asesoria" class="asesoria reveal">
+    <section id="proyectos" class="proyectos reveal">
+      <div class="section-label">Proyectos</div>
+      <div class="proyecto-card">
+        <div class="proyecto-header">
+          <h3>Balance Pipeline</h3>
+          <a href="https://github.com/rformigli/balance-pipeline" target="_blank" class="proyecto-link">GitHub ↗</a>
+        </div>
+        <p class="proyecto-desc">
+          Pipeline en Python para extraer, transformar y consolidar datos financieros 
+          corporativos desde cientos de archivos Excel dispersos en directorios compartidos — 
+          una recreación independiente del sistema que construí en Itaú.
+        </p>
+        <div class="proyecto-tags">
+          <span class="skill">Python</span>
+          <span class="skill">pandas</span>
+          <span class="skill">SQLite</span>
+          <span class="skill">Cache strategies</span>
+        </div>
+      </div>
+    </section>
+
+<section id="asesoria" class="asesoria reveal">
   <div class="section-label">Asesoría personal</div>
   <div class="asesoria-inner">
     <h2 class="asesoria-title">Una conversación<br /><em>honesta</em> sobre tu dinero</h2>
     <div class="asesoria-content">
       <p>
-        Ofrezco una primera charla gratuita para ayudarte a entender 
-        dónde estás parado financieramente y por dónde empezar a mejorar.
-        Sin productos que vender, sin agenda oculta.
+        Sin productos que vender, sin agenda oculta. Solo claridad sobre 
+        dónde estás parado financieramente y qué hacer al respecto.
       </p>
-      <ul class="asesoria-lista">
-        <li><span class="lista-num">01</span>Primera consulta gratuita — 20 a 30 minutos</li>
-        <li><span class="lista-num">02</span>Diagnóstico de tu situación actual</li>
-        <li><span class="lista-num">03</span>Sugerencias concretas y accionables</li>
-        <li><span class="lista-num">04</span>Seguimiento disponible para quienes quieran ir más profundo</li>
-      </ul>
+
+      <div class="tier-card">
+        <div class="tier-header">
+          <span class="tier-name">Primera charla</span>
+          <span class="tier-price">Gratis</span>
+        </div>
+        <p class="tier-desc">20–30 minutos por videollamada. Diagnóstico inicial de tu situación y primeras sugerencias.</p>
+      </div>
+
+      <div class="tier-card tier-featured">
+        <div class="tier-header">
+          <span class="tier-name">Plan financiero</span>
+          <span class="tier-price">A definir</span>
+        </div>
+        <p class="tier-desc">60–90 minutos. Diagnóstico a fondo + plan financiero por escrito con prioridades y próximos pasos concretos.</p>
+      </div>
+
       <a href="#contacto" class="cta-btn">Agendar primera charla</a>
+      <p class="cta-note">La primera charla es gratuita — el plan financiero se coordina después si querés avanzar.</p>
     </div>
   </div>
 </section>
